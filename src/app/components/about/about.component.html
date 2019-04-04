@@ -1,0 +1,56 @@
+<div class="container-fluid" id="about">
+    <div class="display-3 stitle">About Site Page</div>
+    <hr>
+    <p class="mb-5">Some technical details about this site for those who are interested.  I won't get too deep into the code details, just some 
+      high level notes on what I learned setting up a static website on Angular framework.
+    </p>
+    <p>
+      Probably most important thing to point out - This is a simple website for training purposes.  If the Twitter handles suddenly change around the 
+      end of April to a bunch of horse racing analysts before the Kentucky Derby, well it is not my fault.  "Corporate HQ" make all the big decisions in 
+      Crazy Town, USA.
+    </p>
+    <p>
+      Actually I'll add more notes later.  
+    </p>
+  
+    <div class="h3 mt-2 stitle p-2">Angular</div>
+    <hr>
+    <div class="mb-5">
+      <p>More information:  <a href="https://angular.io/" target="_blank">Angular Framework</a> </p>
+      <p>
+        While certainly not required to set up a static web site, Angular framework help organize web site development.  The more content added to the
+        web site creates more complexity.  Organizing a site into components helps break down the web site content into more manageable parts.  This
+        is where the Angular framework comes in.
+      </p>
+      <p>
+        Easiest way to get started is the <a href="https://angular.io/guide/quickstart" target="_blank">Angular Quick Start</a> guide.  If you are interested in learning more about Angular, I would recommend a book or training
+        video to get started building examples more details about Angular.  I found a couple training videos on <a href="https://www.udemy.com/" target="_blank">Udemy</a> and
+        <a href="https://www.packtpub.com/"  target="_blank">Packt Publishing</a> to be helpful.
+      </p>
+      <p>
+        Quick note regarding AWS S3 website hosting an Angular application.  As mentioned earlier, AWS S3 website will not have root ("/") as default context path.
+        By default, a new Angular application generated from ng-new will use a root context "/" path, which will not work with a simple AWS S3 website.  To fix this
+        situation, after creating a new Angular application, update the default index.html with your AWS S3 bucket name.  Specifically, change:
+      </p>
+      <p class="pl-5">
+          <strong>base href="/"</strong>  tag to <strong>base href="/%%YOUR_AWS_S3_BUCKET_NAME%%/"</strong>
+      </p>
+      <p>
+        This change will tell Angular application to add AWS S3 bucket name to the URL path that is appended on <strong>http://s3.amazonaws.com/</strong> site.
+      </p>
+      <p>
+        Twitter Timeline Feed:  If you are interested in added one to your website, follow instructions here:
+        <a href="https://help.twitter.com/en/using-twitter/embed-twitter-feed"  target="_blank">Twitter Timeline Help Page</a>
+      </p>
+      <p>
+        Note regarding Twitter Timeline Feed on an Angular site:  I had an issue with the Twitter timeline display on initial page load.  The issue is caused by
+        the Angular routing not starting the Twitter widget when the component loads.  To get around this issue, follow the instructions posted on this
+        stackoverview post.
+      </p>
+      <p class="pl-5">
+        <a href="https://stackoverflow.com/questions/42993859/twitter-widget-on-angular-2" target="_blank">Angular Router Fix for Twitter Timeline Feed</a>
+      </p>
+    </div>
+  
+  </div>
+  

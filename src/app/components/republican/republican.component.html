@@ -1,0 +1,25 @@
+<div id="republican" class="container-fluid">
+  <div class="display-3">Republican Party</div>
+  <hr>
+  <div class="display-5">Note:  3 second delay to load page</div>
+  <div class="row">
+    <div *ngFor="let h of gopTwitterList" class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+      <div class="card">
+          <div class="card-header">
+              <p class="name">{{ h.name }}</p>
+          </div>
+          <div class="card-body">
+              <a
+              class="twitter-timeline"
+              data-width="500"
+              data-height="1000"
+              data-theme="dark"
+              href="{{ h.url }}"
+            >
+              Tweets by {{ h.name }}</a
+            >      
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
