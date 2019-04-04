@@ -1,53 +1,55 @@
-<div class="container-fluid" id="about">
+<div class="container-fluid mb-5" id="about">
   <div class="display-3 stitle">About Site Page</div>
   <hr>
-    <p class="mb-5">Some technical details about this site for those who are interested.  Information below is not intended for a step-by-step guide on how to code a site.  
-	The information below is intended to be a high level guide for what steps need to be done to complete an application.  
-	Specific code for this site can be found in the following git repository:
-	</p>
-	<p class="mb-5">
-	<a class="pl-5" href="https://github.com/leseanbruneau/twitter-feeds-angular-app" target="_blank">GitHub Repo for Twitter Feeds Angular Application</a> 
-    </p>
-    <p>
-      Probably most important thing to point out - This is a simple website for training purposes.  If the Twitter feeds suddenly change around the 
-      end of April to a bunch of horse racing analysts right before the Kentucky Derby, well it is not my fault.  "Corporate HQ" make all the big decisions in 
-      Crazy Town, USA, including content on this test site.
-    </p>
+  <p class="mb-3">
+    Some technical details about this site for those who are interested.  Information below is not intended for a step-by-step guide on how to code a site.  
+    The information below is intended to be a high level guide for what steps need to be done to complete an application.  
+    Specific code for this site can be found in the following git repository:
+  </p>
+  <p class="mb-3">
+    <a class="pl-5" href="https://github.com/leseanbruneau/twitter-feeds-angular-app" target="_blank">GitHub Repo for Twitter Feeds Angular Application</a> 
+  </p>
+  <p>
+    Probably most important thing to point out - This is a simple website for training purposes.  If the Twitter feeds suddenly change around the 
+    end of April to a bunch of horse racing analysts right before the Kentucky Derby, well it is not my fault.  "Corporate HQ" make all the big decisions in 
+    Crazy Town, USA, including content on this test site.
+  </p>
   
-   <div class="display-3 mt-2 stitle p-2">Quick Setup Using GitHub Repository Code</div>
-    <hr>
-    <p>To use code from GitHub repository (run from command line, except for comment lines that start with #): </p>
-    <div class="mb-5 pl-5">
-      <p class="mb-0"># Clone repo - will create a new twitter-feeds-angular-app directory in directory command is run from</p>
-      <p class="mb-2"><strong>git clone https://github.com/leseanbruneau/twitter-feeds-angular-app.git</strong></p>
-	  
-      <p class="mb-0"># change directory to application root directory</p>
-      <p class="mb-2"><strong>cd twitter-feeds-angular-app</strong></p>
-	  
-      <p class="mb-0"># install node_modules - will need Nodejs and Angular Cli installed on workstation</p>
-      <p class="mb-2"><strong>npm install --save-dev</strong></p>
-	  
-      <p class="mb-0"># Run application on development server</p>
-      <p class="mb-2"><strong>ng serve</strong></p>
-	  
-      <p class="mb-0"># Create distrobution build for deployment to web server - will create new dist directory in application root directory</p>
-      <p class="mb-2"><strong>ng build --prod</strong></p>
-	  
-      <p class="mb-0"># Move all files in <app-root-dir>/dist/twitter-feeds-angular-app to web server</p>
-    </div>
-	
-   <div class="display-3 mt-2 stitle p-2">Web Hosting Note - AWS S3 website hosting</div>
-    <hr>	
-      <p>
-        Quick note regarding AWS S3 website hosting an Angular application.  As mentioned earlier, AWS S3 website will not have root ("/") as default context path.
-        By default, a new Angular application generated from ng-new will use a root context "/" path, which will not work with a simple AWS S3 website.  To fix this
-        situation, after creating a new Angular application, update the default index.html with your AWS S3 bucket name.  Specifically, change:
-      </p>
-      <p class="pl-5">
-          <strong>base href="/"</strong>  tag to <strong>base href="/%%YOUR_AWS_S3_BUCKET_NAME%%/"</strong>
-      </p>
-      <p>
-        This change will tell Angular application to add AWS S3 bucket name to the URL path that is appended on <strong>http://s3.amazonaws.com/</strong> site.
-      </p>
+  <div class="display-3 mt-2 stitle p-2">Quick Setup Using GitHub Repository Code</div>
+  <hr>
+  <p>To use code from GitHub repository (run from command line, except for comment lines that start with #): </p>
+  <div class="mb-5 pl-5">
+    <p class="mb-0"># Clone repo - will create a new twitter-feeds-angular-app directory in directory command is run from</p>
+    <p class="mb-2"><strong>git clone https://github.com/leseanbruneau/twitter-feeds-angular-app.git</strong></p>
   
+    <p class="mb-0"># change directory to application root directory</p>
+    <p class="mb-2"><strong>cd twitter-feeds-angular-app</strong></p>
+  
+    <p class="mb-0"># install node_modules - will need Nodejs and Angular Cli installed on workstation</p>
+    <p class="mb-2"><strong>npm install --save-dev</strong></p>
+  
+    <p class="mb-0"># Run application on development server</p>
+    <p class="mb-2"><strong>ng serve</strong></p>
+  
+    <p class="mb-0"># Create distrobution build for deployment to web server - will create new dist directory in application root directory</p>
+    <p class="mb-2"><strong>ng build --prod</strong></p>
+  
+    <p class="mb-0"># Move all files in %%app-root-dir%%/dist/twitter-feeds-angular-app to web server</p>
   </div>
+
+
+  <div class="display-3 mt-2 stitle p-2">Web Hosting Note - AWS S3 website hosting</div>
+  <hr>	
+  <p>
+      Quick note regarding AWS S3 website hosting an Angular application.  As mentioned earlier, AWS S3 website will not have root ("/") as default context path.
+      By default, a new Angular application generated from ng-new will use a root context "/" path, which will not work with a simple AWS S3 website.  To fix this
+      situation, after creating a new Angular application, update the default index.html with your AWS S3 bucket name.  Specifically, change:
+  </p>
+  <p class="pl-5">
+      <strong>base href="/"</strong>  tag to <strong>base href="/%%YOUR_AWS_S3_BUCKET_NAME%%/"</strong>
+  </p>
+  <p>
+      This change will tell Angular application to add AWS S3 bucket name to the URL path that is appended on <strong>http://s3.amazonaws.com/</strong> site.
+  </p>
+  
+</div>
