@@ -1,32 +1,43 @@
 <div class="container-fluid" id="about">
-    <div class="display-3 stitle">About Site Page</div>
-    <hr>
-    <p class="mb-5">Some technical details about this site for those who are interested.  I won't get too deep into the code details, just some 
-      high level notes on what I learned setting up a static website on Angular framework.
+  <div class="display-3 stitle">About Site Page</div>
+  <hr>
+    <p class="mb-5">Some technical details about this site for those who are interested.  Information below is not intended for a step-by-step guide on how to code a site.  
+	The information below is intended to be a high level guide for what steps need to be done to complete an application.  
+	Specific code for this site can be found in the following git repository:
+	</p>
+	<p class="mb-5">
+	<a class="pl-5" href="https://github.com/leseanbruneau/twitter-feeds-angular-app" target="_blank">GitHub Repo for Twitter Feeds Angular Application</a> 
     </p>
     <p>
-      Probably most important thing to point out - This is a simple website for training purposes.  If the Twitter handles suddenly change around the 
-      end of April to a bunch of horse racing analysts before the Kentucky Derby, well it is not my fault.  "Corporate HQ" make all the big decisions in 
-      Crazy Town, USA.
-    </p>
-    <p>
-      Actually I'll add more notes later.  
+      Probably most important thing to point out - This is a simple website for training purposes.  If the Twitter feeds suddenly change around the 
+      end of April to a bunch of horse racing analysts right before the Kentucky Derby, well it is not my fault.  "Corporate HQ" make all the big decisions in 
+      Crazy Town, USA, including content on this test site.
     </p>
   
-    <div class="h3 mt-2 stitle p-2">Angular</div>
+   <div class="display-3 mt-2 stitle p-2">Quick Setup Using GitHub Repository Code</div>
     <hr>
-    <div class="mb-5">
-      <p>More information:  <a href="https://angular.io/" target="_blank">Angular Framework</a> </p>
-      <p>
-        While certainly not required to set up a static web site, Angular framework help organize web site development.  The more content added to the
-        web site creates more complexity.  Organizing a site into components helps break down the web site content into more manageable parts.  This
-        is where the Angular framework comes in.
-      </p>
-      <p>
-        Easiest way to get started is the <a href="https://angular.io/guide/quickstart" target="_blank">Angular Quick Start</a> guide.  If you are interested in learning more about Angular, I would recommend a book or training
-        video to get started building examples more details about Angular.  I found a couple training videos on <a href="https://www.udemy.com/" target="_blank">Udemy</a> and
-        <a href="https://www.packtpub.com/"  target="_blank">Packt Publishing</a> to be helpful.
-      </p>
+    <p>To use code from GitHub repository (run from command line, except for comment lines that start with #): </p>
+    <div class="mb-5 pl-5">
+      <p class="mb-0"># Clone repo - will create a new twitter-feeds-angular-app directory in directory command is run from</p>
+      <p class="mb-2"><strong>git clone https://github.com/leseanbruneau/twitter-feeds-angular-app.git</strong></p>
+	  
+      <p class="mb-0"># change directory to application root directory</p>
+      <p class="mb-2"><strong>cd twitter-feeds-angular-app</strong></p>
+	  
+      <p class="mb-0"># install node_modules - will need Nodejs and Angular Cli installed on workstation</p>
+      <p class="mb-2"><strong>npm install --save-dev</strong></p>
+	  
+      <p class="mb-0"># Run application on development server</p>
+      <p class="mb-2"><strong>ng serve</strong></p>
+	  
+      <p class="mb-0"># Create distrobution build for deployment to web server - will create new dist directory in application root directory</p>
+      <p class="mb-2"><strong>ng build --prod</strong></p>
+	  
+      <p class="mb-0"># Move all files in <app-root-dir>/dist/twitter-feeds-angular-app to web server</p>
+    </div>
+	
+   <div class="display-3 mt-2 stitle p-2">Web Hosting Note - AWS S3 website hosting</div>
+    <hr>	
       <p>
         Quick note regarding AWS S3 website hosting an Angular application.  As mentioned earlier, AWS S3 website will not have root ("/") as default context path.
         By default, a new Angular application generated from ng-new will use a root context "/" path, which will not work with a simple AWS S3 website.  To fix this
@@ -38,19 +49,5 @@
       <p>
         This change will tell Angular application to add AWS S3 bucket name to the URL path that is appended on <strong>http://s3.amazonaws.com/</strong> site.
       </p>
-      <p>
-        Twitter Timeline Feed:  If you are interested in added one to your website, follow instructions here:
-        <a href="https://help.twitter.com/en/using-twitter/embed-twitter-feed"  target="_blank">Twitter Timeline Help Page</a>
-      </p>
-      <p>
-        Note regarding Twitter Timeline Feed on an Angular site:  I had an issue with the Twitter timeline display on initial page load.  The issue is caused by
-        the Angular routing not starting the Twitter widget when the component loads.  To get around this issue, follow the instructions posted on this
-        stackoverview post.
-      </p>
-      <p class="pl-5">
-        <a href="https://stackoverflow.com/questions/42993859/twitter-widget-on-angular-2" target="_blank">Angular Router Fix for Twitter Timeline Feed</a>
-      </p>
-    </div>
   
   </div>
-  
