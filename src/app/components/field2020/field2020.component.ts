@@ -8,7 +8,7 @@ import { TwitterHandle } from 'src/app/models/TwitterHandle';
   styleUrls: ['./field2020.component.css']
 })
 export class Field2020Component implements OnInit {
-  private field2020TwitterList: TwitterHandle[];
+  field2020TwitterList: TwitterHandle[];
 
   constructor(private field2020ListService: TwitterFeedsService) { }
 

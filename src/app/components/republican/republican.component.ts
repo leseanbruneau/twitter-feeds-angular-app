@@ -8,7 +8,7 @@ import { TwitterHandle } from 'src/app/models/TwitterHandle';
   styleUrls: ['./republican.component.css']
 })
 export class RepublicanComponent implements OnInit {
-  private gopTwitterList: TwitterHandle[];
+  gopTwitterList: TwitterHandle[];
 
   constructor(private gopListService: TwitterFeedsService) { 
   }

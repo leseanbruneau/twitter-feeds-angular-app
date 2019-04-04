@@ -8,8 +8,7 @@ import { TwitterHandle } from 'src/app/models/TwitterHandle';
   styleUrls: ['./democrat.component.css']
 })
 export class DemocratComponent implements OnInit {
-  private twitter: any;
-  private dncTwitterList: TwitterHandle[];
+  dncTwitterList: TwitterHandle[];
 
   constructor(private dncListService: TwitterFeedsService) { 
   }
