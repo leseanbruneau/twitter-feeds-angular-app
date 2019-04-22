@@ -66,16 +66,16 @@ export class TwitterFeedsService {
         url: 'https://twitter.com/amyklobuchar'
       },
       {
-        name: 'Bernie Sanders',
+        name: 'Joe Biden',
         page: 'field2020',
         order: 2,
-        url: 'https://twitter.com/berniesanders'
+        url: 'https://twitter.com/joebiden'
       },
       {
-        name: 'John Delaney',
+        name: 'Bernie Sanders',
         page: 'field2020',
         order: 3,
-        url: 'https://twitter.com/johndelaney'
+        url: 'https://twitter.com/berniesanders'
       },
       {
         name: 'Elizabeth Warren',
@@ -144,11 +144,41 @@ export class TwitterFeedsService {
         url: 'https://twitter.com/marwilliamson'
       },
       {
-        name: 'Cory Booker',
+        name: 'John Delaney',
         page: 'field2020',
         order: 15,
+        url: 'https://twitter.com/johndelaney'
+      },
+      {
+        name: 'Wayne Messam',
+        page: 'field2020',
+        order: 16,
+        url: 'https://twitter.com/WayneMessam'
+      }, 
+      {
+        name: 'Cory Booker',
+        page: 'field2020',
+        order: 17,
         url: 'https://twitter.com/senbooker'
-      }   
+      },   
+      {
+        name: 'Seth Moulton',
+        page: 'field2020',
+        order: 18,
+        url: 'https://twitter.com/sethmoulton'
+      }, 
+      {
+        name: 'Tim Ryan',
+        page: 'field2020',
+        order: 19,
+        url: 'https://twitter.com/reptimryan'
+      }, 
+      {
+        name: 'Eric Swalwell',
+        page: 'field2020',
+        order: 20,
+        url: 'https://twitter.com/ericswalwell'
+      } 
     ]
   }
 
@@ -187,3 +217,4 @@ export class TwitterFeedsService {
   }
 
 }
+
