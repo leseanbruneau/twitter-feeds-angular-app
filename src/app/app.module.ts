@@ -13,6 +13,8 @@ import { RepublicanComponent } from './components/republican/republican.componen
 import { DemocratComponent } from './components/democrat/democrat.component';
 import { Field2020Component } from './components/field2020/field2020.component';
 import { TwitterFeedsService } from './services/twitter-feeds.service';
+import { NightOneComponent } from './components/night-one/night-one.component';
+import { NightTwoComponent } from './components/night-two/night-two.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { TwitterFeedsService } from './services/twitter-feeds.service';
     NotfoundComponent,
     RepublicanComponent,
     DemocratComponent,
-    Field2020Component
+    Field2020Component,
+    NightOneComponent,
+    NightTwoComponent
   ],
   imports: [
     BrowserModule,

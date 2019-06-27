@@ -20,5 +20,8 @@ export class RepublicanComponent implements OnInit {
     }, 3000); 
   }
 
+  goHomeUrl(homeUrl: string) {
+    window.open(homeUrl, '_blank');
+  }
 
 }

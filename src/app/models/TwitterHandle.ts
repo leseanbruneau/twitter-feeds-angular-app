@@ -1,6 +1,8 @@
 export interface TwitterHandle {
     name: string,
     page: string,
+    night?: number,
     order: number,
-    url: string
+    url: string,
+    homeUrl?: string
 }

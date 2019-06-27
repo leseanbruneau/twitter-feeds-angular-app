@@ -14,3 +14,8 @@
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+div.card-header:hover { 
+    cursor:pointer
+}
+

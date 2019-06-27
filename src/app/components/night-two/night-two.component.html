@@ -1,15 +1,15 @@
-<div id="republican" class="container-fluid">
-  <div class="display-3">Republican Party</div>
+<div id="nightTwo" class="container-fluid">
+  <div class="display-3">2020 Presidential Challengers - Second Night</div>
   <hr>
   <div class="pb-3">
     <p class="display-5"><strong>Notes:</strong></p>
     <ul>
-      <li>3 second delay to load page</li>
+      <li>7 second delay to load page</li>
       <li>Click Politician's name to visit their website</li>
     </ul>
   </div>
   <div class="row">
-    <div *ngFor="let h of gopTwitterList" class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
+    <div *ngFor="let h of nightTwoTwitterList" class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
       <div class="card">
           <div class="card-header" (click)="goHomeUrl(h.homeUrl)">
               <p class="name">{{ h.name }}</p>

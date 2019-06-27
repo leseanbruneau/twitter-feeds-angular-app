@@ -1,17 +1,23 @@
 <div id="democrat" class="container-fluid">
     <div class="display-3">Democratic Party</div>
     <hr>
-    <div class="display-5">Note:  3 second delay to load page</div>
+    <div class="pb-3">
+      <p class="display-5"><strong>Notes:</strong></p>
+      <ul>
+        <li>3 second delay to load page</li>
+        <li>Click Politician's name to visit their website</li>
+      </ul>
+    </div>
     <div class="row">
-      <div *ngFor="let h of dncTwitterList" class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+      <div *ngFor="let h of dncTwitterList" class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
         <div class="card">
-            <div class="card-header">
-                <p class="name">{{ h.name }}</p>
+            <div class="card-header" (click)="goHomeUrl(h.homeUrl)">
+                  <p class="name">{{ h.name }}</p>
             </div>
             <div class="card-body">
                 <a
                 class="twitter-timeline"
-                data-width="500"
+                data-width="800"
                 data-height="1000"
                 data-theme="dark"
                 href="{{ h.url }}"
