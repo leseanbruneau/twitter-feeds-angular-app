@@ -1,37 +1,29 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a routerLink="home" class="navbar-brand">Crazy Town, USA</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <div class="nav-item pr-2" data-toggle="collapse" data-target="#navbarCollapse">
+      <a routerLink="home" class="navbar-brand">Crazy Town, USA</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarCollapse">
           <a routerLink="republican" class="nav-link px-4">Republican</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarCollapse">
           <a routerLink="democrat" class="nav-link px-4">Democratic</a>
         </li>
-
-        <!--
-        <li class="nav-item">
-          <a routerLink="field2020" class="nav-link px-4">2020 Challengers</a>
-        </li>
-      -->
-
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarCollapse">
           <a routerLink="nightOne" class="nav-link px-4">1st Night Challengers</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarCollapse">
           <a routerLink="nightTwo" class="nav-link px-4">2nd Night Challengers</a>
         </li>
-<!--
-        <li class="nav-item">
-          <a routerLink="kd" class="nav-link px-4">Kentucky Derby</a>
-        </li>
-      -->
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarCollapse">
           <a routerLink="about" class="nav-link px-4">About Site</a>
         </li>
       </ul>
     </div>
+  </div>
 </nav>
